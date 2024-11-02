@@ -1,0 +1,31 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package conversionminsec;
+
+/**
+ *
+ * @author User
+ */
+import java.util.Scanner;
+public class ConversionMinSec {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+       Scanner input = new Scanner(System.in) ;
+       System.out.println("Enter an integer for seconds: ");
+       int seconds = input.nextInt() ;
+       int hours = seconds/3600 ;
+       int remainingseconds = seconds%3600 ;
+       int minutes = remainingseconds /60 ;
+       int sec = remainingseconds%60 ;
+       System.out.println( hours );
+       System.out.println( minutes );
+       System.out.println( sec );
+    }
+    
+}
