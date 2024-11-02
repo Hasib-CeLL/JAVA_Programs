@@ -1,0 +1,44 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.dayfinder;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author User
+ */
+public class Dayfinder {
+
+    public static void main(String[] args) {
+        //System.out.println("Hello World!");
+        Scanner input = new Scanner(System.in) ;
+        System.out.println("Enter an integer for day number: ");
+        int day = input.nextInt() ;
+        int x = (day+10) % 7 ;
+        if(x==1){
+         System.out.println("Saturday");
+        }
+        else if(x==2){
+         System.out.println("Sunday");
+        }
+        else if(x==3){
+         System.out.println("Monday");
+        }
+        else if(x==4){
+         System.out.println("Tuesday");
+        }
+        else if(x==5){
+         System.out.println("Wednesday");
+        }
+        else if(x==6){
+         System.out.println("Thursday");
+        }
+        else if(x==7){
+         System.out.println("Friday");
+        }
+        
+    }
+}
