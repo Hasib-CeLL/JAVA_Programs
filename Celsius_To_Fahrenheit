@@ -1,0 +1,25 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.celsiustofk;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author User
+ */
+public class CelsiusToFK {
+
+    public static void main(String[] args) {
+        //System.out.println("Hello World!");
+        Scanner input = new Scanner(System.in) ;
+        System.out.println("Enter an integer for celcius number: ");
+        int celcius = input.nextInt() ;
+        double Fahrenheit = (9*celcius)/5 + 32 ;
+        double Kelvin = celcius + 273 ;
+        System.out.println("Fahrenheit: "+ Fahrenheit+"F" + " Kelvin: "+ Kelvin+"K");    
+        
+    }
+}
