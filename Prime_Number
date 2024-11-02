@@ -1,0 +1,36 @@
+/*
+* Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+*/
+//Factorial_Number
+
+package com.mycompany.hasib1;
+
+/**
+*
+* @author Student
+*/
+import java.util.Scanner;
+public class Hasib1 
+{
+public static int F(int n)
+ {
+  int F = 1 ;
+
+  for(int i = 1 ; i<=n ; i++)
+  {
+   F = F*i ;
+  }
+ return F ;
+
+ }
+
+public static void main(String[] args) 
+ {
+ Scanner input = new Scanner(System.in) ;
+ System.out.println("Enter the number: ");
+ int n = input.nextInt() ;
+ int result = F( n) ;
+ System.out.println(result);
+
+ } 
+}
