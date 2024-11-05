@@ -1,0 +1,43 @@
+/*
+* Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+*/
+
+package com.mycompany.sumofarray;
+
+/**
+*
+* @author Student
+*/
+import java.util.Scanner;
+
+public class SumOfArray {
+
+public static void main(String[] args) {
+Scanner input = new Scanner(System.in);
+System.out.print("Enter the size of the array: ");
+int size = input.nextInt();
+int[] array = new int[size];
+
+System.out.println("Enter " + size + " elements:");
+for (int i = 0; i < size; i++) {
+array[i] = input.nextInt();
+}
+for (int i = 0; i < size; i++) {
+if (i % 2 == 0) {
+array[i] += 2;
+} else {
+array[i] -= 1;
+}
+}
+int sum = 0;
+for (int value : array) {
+sum += value;
+}
+System.out.println("New Array:");
+for (int value : array) {
+System.out.print(value + " ");
+}
+System.out.println("\nSummation of New elements: " + sum);
+
+}
+}
