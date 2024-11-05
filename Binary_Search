@@ -1,0 +1,27 @@
+/*
+* Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+*/
+package com.mycompany.binarysearch;
+/**
+*
+* @author Student
+*/
+import java.util.Arrays;
+public class BinarySearch {
+public static void main(String[] args) {
+int[] arr = {10, 1, 3, 20, 99, 5, 8, 2, 4};
+Arrays.sort(arr);
+System.out.println("Sorted Array: " + Arrays.toString(arr));
+int key = 3;
+int result = binarySearch(arr, key);
+if (result >= 0) {
+System.out.println("Element " + key + " found at index: " + result);
+} else {
+System.out.println("Element " + key + " not found. Insertion point: " + (-result - 1));
+}
+
+}
+public static int binarySearch(int[] arr, int key) {
+return Arrays.binarySearch(arr, key);
+}
+}
