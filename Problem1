@@ -1,0 +1,47 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.problem1;
+
+/**
+ *
+ * @author Student
+ */
+
+class Student {
+    
+    private String name;
+    private int age;
+    private double marksSubject1;
+    private double marksSubject2;
+
+    public Student(String name, int age, double marksSubject1, double marksSubject2) {
+        this.name = name;
+        this.age = age;
+        this.marksSubject1 = marksSubject1;
+        this.marksSubject2 = marksSubject2;
+    }
+
+    public void ShowDetails() {
+        System.out.println("Student Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Marks in Subject 1: " + marksSubject1);
+        System.out.println("Marks in Subject 2: " + marksSubject2);
+        System.out.println(); 
+    }
+}
+
+public class Problem1 {
+    public static void main(String[] args) {
+       
+        Student student1 = new Student("Hasib", 20, 85.5, 90.0);
+        Student student2 = new Student("Joy", 22, 78.0, 88.5);
+
+        System.out.println("Details of Student 1:");
+        student1.ShowDetails();
+
+        System.out.println("Details of Student 2:");
+        student2.ShowDetails();
+    }
+}
